@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Festinha
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h1>Insumos</h1>
+
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="limpar()">
+      <ion-icon name="trash"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+<div class="primeiro">
+
+  <div class="conteudo">
+    <div class="linha">
+      <div class="produto">Adulto</div>
+      <div class="mostrador">
+        <ion-button (click)="removerAdulto()">-</ion-button>
+        <input type="number" [(ngModel)]="quantidadeAdulto" (keyup)="calcularTotalConta()">
+        <ion-button (click)="adicionarAdulto()">+</ion-button>
+      </div>
+    </div>
+
+    <div class="linha">
+      <div class="produto">Criança</div>
+      <div class="mostrador">
+        <ion-button (click)="removerCrianca()">-</ion-button>
+        <input type="number" [(ngModel)]="quantidadeCrianca" (keyup)="calcularTotalConta()">
+        <ion-button (click)="adicionarCrianca()">+</ion-button>
+      </div>
+    </div>
+
+  </div>
+
+    <div class="linhaResultado">
+      <div>Total de Salgadinhos (un)</div>
+      <div>{{ quantidadeSalgadinhos.toFixed(1) }}</div>
+      <div>Total de Refrigerante (litros)</div>
+      <div>{{ quantidadeRefrigerante.toFixed(1) }}</div>
+      <div>Total de Bolo (gramas)</div>
+      <div>{{ quantidadeBolo.toFixed(1) }}</div>
+    </div>
+  </div>
+</ion-content>

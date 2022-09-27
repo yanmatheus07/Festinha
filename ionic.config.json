@@ -1,0 +1,7 @@
+{
+  "name": "Festinha",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

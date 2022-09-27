@@ -1,0 +1,61 @@
+ion-content{
+  --background: rgb(59, 59, 202);
+}
+ion-fab-button{
+  --background: #f62f2f;
+  --background-activated: #da2727;
+}
+h1{
+  background: #fff;
+  padding: 32px;
+  text-transform: uppercase;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 900;
+  color: #da2727;
+  margin-top: 38px;
+}
+.produto{
+  color: #f2da05;
+  font-weight: 700;
+}
+.conteudo{
+  font-size: 1.5rem;
+  padding: 32px;
+}
+.linha{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.mostrador{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  ion-button{
+    --background: #fff;
+    --background-activated: #aaa;
+    --color: #000;
+  }
+  input{
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border: 0;
+  }
+}
+
+.primeiro {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.linhaResultado{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
