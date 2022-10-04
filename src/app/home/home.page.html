@@ -20,7 +20,7 @@
 
   <div class="conteudo">
     <div class="linha">
-      <div class="produto">Adulto</div>
+      <div class="produto">ADULTO</div>
       <div class="mostrador">
         <ion-button (click)="removerAdulto()">-</ion-button>
         <input type="number" [(ngModel)]="quantidadeAdulto" (keyup)="calcularTotalConta()">
@@ -28,8 +28,8 @@
       </div>
     </div>
 
-    <div class="linha">
-      <div class="produto">Criança</div>
+    <div class="linha2">
+      <div class="produto">CRIANÇA</div>
       <div class="mostrador">
         <ion-button (click)="removerCrianca()">-</ion-button>
         <input type="number" [(ngModel)]="quantidadeCrianca" (keyup)="calcularTotalConta()">
@@ -40,12 +40,22 @@
   </div>
 
     <div class="linhaResultado">
-      <div>Total de Salgadinhos (un)</div>
-      <div>{{ quantidadeSalgadinhos.toFixed(1) }}</div>
-      <div>Total de Refrigerante (litros)</div>
-      <div>{{ quantidadeRefrigerante.toFixed(1) }}</div>
-      <div>Total de Bolo (gramas)</div>
-      <div>{{ quantidadeBolo.toFixed(1) }}</div>
+      <container class="resul">
+        <div>Total de Salgadinhos (un)</div>
+        <div>{{ quantidadeSalgadinhos.toFixed(0) }}</div>
+      </container>
+      
+      <container class="resul">
+        <div>Total de Refrigerante (litros)</div>
+        <div>{{ quantidadeRefrigerante.toFixed(1) }}</div>
+      </container>
+      
+
+      <container class="resul">
+        <div>Total de Bolo (gramas)</div>
+        <div>{{ quantidadeBolo.toFixed(1) }}</div>
+      </container>
+      
     </div>
   </div>
 </ion-content>
